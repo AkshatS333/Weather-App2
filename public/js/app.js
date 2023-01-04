@@ -45,7 +45,7 @@ weatherForm.addEventListener('submit', (e) => {
 
             messageOne.textContent = data.location;
 
-            messageTwo.textContent = 'The current temperature is ' + data.forecast.temperature + '°C and the wind speed is ' + data.forecast.wind_speed + ' m/s .'
+            messageTwo.textContent = 'The current temperature is ' + data.forecast.temperature + '°C and the wind speed measured is ' + data.forecast.wind_speed + ' m/s with level of humidity reported is '+ data.forecast.humidity + '.'
 
             // console.log(data.forecast.temperature)
             // console.log(data.forecast.wind_speed)

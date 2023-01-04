@@ -33,7 +33,8 @@ const forecast = (lat, lon,callback) => {
                 callback(undefined, {
                     place: citys,
                     temperature: body.temp,
-                    wind_speed: body.wind_speed
+                    wind_speed: body.wind_speed,
+                    humidity: body.humidity
                 })
 
             })
