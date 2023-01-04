@@ -42,7 +42,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help Section',
-        helpmsg: 'Enter your desired location in Search box and after few seconds you will get the temperature and wind speed of that location.',
+        helpmsg: 'Enter your desired location in Search box and after few seconds you will get the temperature, wind speed and humidity levels of that location.',
         name: 'Akshat Saxena'
     })
 })
@@ -122,7 +122,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         name: 'Akshat Saxena',
-        errorMsg: 'My 404 page'
+        errorMsg: '404 page. Wrong URL entered.'
     })
 })
 
